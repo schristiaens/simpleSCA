@@ -11,9 +11,13 @@ This repository automates software composition analysis (SCA) scans on GitHub-ho
 
 ### Usage
 
+Set needed variables in your environment:
+GITHUB_PAT = A Github personal access token for cloning repos
+DEPTRACK_API_KEY = An API key for your OWASP Dependency Track instance. See https://github.com/DependencyTrack/dependency-track to set up a simple instance using Docker Compose or similar. 
+
 Build and run the dev container:
 
-`./dev-run.sh`
+`./dev-run.sh repo_list`
 
 Run scans on a repository or a file containing multiple repository URLs:
 
